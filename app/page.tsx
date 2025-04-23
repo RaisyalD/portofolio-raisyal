@@ -56,18 +56,19 @@ const projects = [
     link: "https://rezarth.github.io/promnet_uas/",
   },
   {
-    title: "Normaal Movement School Web",
+    title: "Normaal Movement School Website",
     description: "Educational platform for a movement school with responsive design and interactive elements",
     image: "/images/nms-web.png",
     tags: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
     link: "https://nms-web-v1.vercel.app/",
   },
   {
-    title: "PT. Hexindo Website Redesign",
-    description: "Complete redesign of PT. Hexindo's corporate website with modern UI/UX principles",
-    image: "/images/hexindo.png",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
-    link: "https://v0-hexindo-website-redesign.vercel.app/",
+    title: "Bratvacode Website",
+    description: "Complete savior website with modern UI/UX principles",
+    image: "/images/bratvacode.png",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Reactbits"],
+    link: "https://bratvacodeweb.vercel.app/",
+    status: "Temporarily Pending"
   },
   {
     title: "SIMTAMU Fullstack Project",
