@@ -30,7 +30,7 @@ const navItems = [
   { name: "Contact", link: "#contact" },
 ]
 
-// Update the tech stack data to include more technologies and Firebase
+// Update the tech stack data to include more technologies and Supabase
 const techStack = [
   { name: "Next.js", icon: "/icons/nextjs.svg" },
   { name: "React", icon: "/icons/react.svg" },
@@ -38,6 +38,7 @@ const techStack = [
   { name: "Tailwind CSS", icon: "/icons/tailwind.svg" },
   { name: "Node.js", icon: "/icons/nodejs.svg" },
   { name: "Firebase", icon: "/icons/firebase.svg" },
+  { name: "Supabase", icon: "/icons/supabase.svg" },
   { name: "Vercel", icon: "/icons/vercel.svg" },
   { name: "Figma", icon: "/icons/figma.svg" },
   { name: "JavaScript", icon: "/icons/javascript.svg" },
@@ -71,12 +72,18 @@ const projects = [
     status: "Temporarily Pending"
   },
   {
-    title: "SIMTAMU Fullstack Project",
+    title: "SINTAMU Fullstack Project",
     description: "Full-stack guest management system developed during internship at PT. Pupuk Kujang",
     image: "/images/simtamu.png",
     tags: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Node.js", "Express", "Firebase"],
-    link: "#",
-    status: "On Process",
+    link: "https://simtamu-pupuk-kujang.vercel.app/",
+  },
+  {
+    title: "Rotasi PSTI Website",
+    description: "Official website for ROTASI PSTI UPI with dynamic content and registration.",
+    image: "/images/rotasi.svg",
+    tags: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Supabase", "Vercel"],
+    link: "https://www.rotasipsti.id/",
   },
   {
     title: "UI/UX TEMU to KETEMU App Redesign",
