@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 220 20% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+    --primary: 72 92% 50%;
+    --primary-foreground: 220 20% 10%;
+    --secondary: 220 14% 94%;
+    --secondary-foreground: 220 20% 20%;
+    --muted: 220 14% 94%;
+    --muted-foreground: 220 10% 46%;
+    --accent: 72 92% 50%;
+    --accent-foreground: 220 20% 10%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 90%;
+    --input: 220 13% 90%;
+    --ring: 72 92% 50%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 220 25% 10%;
+    --foreground: 210 20% 95%;
+    --card: 220 25% 13%;
+    --card-foreground: 210 20% 95%;
+    --popover: 220 25% 13%;
+    --popover-foreground: 210 20% 95%;
+    --primary: 72 92% 50%;
+    --primary-foreground: 220 20% 10%;
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 210 20% 90%;
+    --muted: 220 20% 18%;
+    --muted-foreground: 220 10% 55%;
+    --accent: 72 92% 50%;
+    --accent-foreground: 220 20% 10%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 20% 95%;
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 72 92% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+}
+
+/* Fade-in animation for scroll reveal */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered children animation */
+.stagger-children > * {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.stagger-children.visible > *:nth-child(1) { transition-delay: 0ms; opacity: 1; transform: translateY(0); }
+.stagger-children.visible > *:nth-child(2) { transition-delay: 80ms; opacity: 1; transform: translateY(0); }
+.stagger-children.visible > *:nth-child(3) { transition-delay: 160ms; opacity: 1; transform: translateY(0); }
+.stagger-children.visible > *:nth-child(4) { transition-delay: 240ms; opacity: 1; transform: translateY(0); }
+.stagger-children.visible > *:nth-child(5) { transition-delay: 320ms; opacity: 1; transform: translateY(0); }
+.stagger-children.visible > *:nth-child(6) { transition-delay: 400ms; opacity: 1; transform: translateY(0); }
+.stagger-children.visible > *:nth-child(7) { transition-delay: 480ms; opacity: 1; transform: translateY(0); }
+.stagger-children.visible > *:nth-child(8) { transition-delay: 560ms; opacity: 1; transform: translateY(0); }
+.stagger-children.visible > *:nth-child(9) { transition-delay: 640ms; opacity: 1; transform: translateY(0); }
+.stagger-children.visible > *:nth-child(10) { transition-delay: 720ms; opacity: 1; transform: translateY(0); }
+.stagger-children.visible > *:nth-child(11) { transition-delay: 800ms; opacity: 1; transform: translateY(0); }
+.stagger-children.visible > *:nth-child(12) { transition-delay: 880ms; opacity: 1; transform: translateY(0); }
+.stagger-children.visible > *:nth-child(13) { transition-delay: 960ms; opacity: 1; transform: translateY(0); }
+
+/* Scroll marquee for tech stack */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 25s linear infinite;
+}
+
+/* Theme toggle icon animation */
+.theme-toggle svg {
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+/* Smooth image loading — only for images with .lazy-fade class */
+.lazy-fade {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.lazy-fade.loaded {
+  opacity: 1;
+}

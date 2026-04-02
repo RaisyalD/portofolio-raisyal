@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1f2937"/>
+      <stop offset="100%" stop-color="#0b0f1a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g filter="url(#shadow)">
+    <circle cx="1050" cy="120" r="180" fill="url(#accent)" opacity="0.25"/>
+  </g>
+  <text x="100" y="280" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="68" font-weight="800">
+    ROTASI PSTI WEBSITE
+  </text>
+  <text x="100" y="340" fill="#9ca3af" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600">
+    Next.js • React • Tailwind CSS • TypeScript • Supabase • Vercel
+  </text>
+  <rect x="100" y="380" width="440" height="80" rx="12" fill="transparent" stroke="#c6f10e" stroke-width="2"/>
+  <text x="120" y="433" fill="#c6f10e" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">
+    rotasipsti.id
+  </text>
+  <g opacity="0.12">
+    <path d="M200 560 C 400 420, 800 420, 1000 560" stroke="#c6f10e" stroke-width="16" fill="none"/>
+  </g>
+</svg>
